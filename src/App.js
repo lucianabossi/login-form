@@ -65,7 +65,6 @@ const text2 = {
   textAlign:"center",
   fontSize: "12px",
   marginTop: "0",
-  color: "gray"
 }
 
 const colorGray = {
@@ -90,7 +89,7 @@ function App() {
           <input type="password" name="password" placeholder="Password" style={input} />
           <p style={text}> Forgot <span style={colorGreen}>Username / Password?</span></p>
         <button style={button}>SIGN IN</button>
-        <p style={text2}>Don't have an account?</p>
+        <p style={{...text2,...colorGray}}>Don't have an account?</p>
         <p style={{...text2,...colorGreen,...fontBold}}>SIGN UP NOW</p>
         </label>
       </form>
